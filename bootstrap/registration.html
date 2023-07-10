@@ -15,38 +15,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">ESP</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">cours</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Semestre S1</a><a class="dropdown-item" href="#">Semestre S2</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">EMPLOIE DU TEMPS</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Semestre S1</a><a class="dropdown-item" href="#">Semestre S2</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Bulletin</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Semestre S1</a><a class="dropdown-item" href="#">Semestre S2</a></div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">nous contacter</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">DECONNExion</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="registration.html">Register</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <main class="page registration-page">
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info">Registration</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                    <p>Veuillez saisir vos coordonnées</p>
                 </div>
-                <form>
-                    <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="mb-3"><label class="form-label" for="password">Password</label><input class="form-control item" type="password" id="password"></div>
-                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control item" type="email" id="email"></div><button class="btn btn-primary" type="submit">Sign Up</button>
+                <form method="post" action="inscription.php">
+                    <div class="mb-3"><label class="form-label" for="name">Prénom</label><input class="form-control item" type="text" id="name" name="prenom" required=""></div>
+                    <div class="mb-3"><label class="form-label" for="name">Nom</label><input class="form-control item" type="text" id="name-1" name="nom" required=""></div>
+                    <div class="mb-3"><label class="form-label" for="name">Date de naissance</label><input class="form-control item" id="name-2" type="date" name="date_naiss"></div>
+                    <div class="mb-3"><label class="form-label" for="password">Password</label><input class="form-control item" type="password" id="password" name="motDePasse" required=""></div>
+                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control item" type="email" id="email" name="email" required=""></div><button class="btn btn-primary" type="submit">Sign Up</button>
                 </form>
             </div>
         </section>
